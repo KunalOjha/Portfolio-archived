@@ -1,0 +1,21 @@
+/* app css stylesheet */
+#main-navbar {
+    border-radius: 0px !important;
+}
+
+#main-jumbotron {
+    background-color: #F1F1EA;
+    margin-top: -20px;
+    margin-left: 10x;
+}
+
+#container1 { 
+    background-color: slategray;
+    margin-top: -20px;
+    height: 720px;
+}
+
+#container2 { 
+    background-color: #D9853B;
+    height: 720px;
+}

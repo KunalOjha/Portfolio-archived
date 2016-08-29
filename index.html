@@ -2,23 +2,48 @@
 <html lang="en" ng-app="application">
 <head>
     <meta charset="utf-8">
-    <title>Angular Sprout</title>
-    <link rel="stylesheet" href="styles/application.css"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 </head>
 <body>
-    <nav>
-        <ng-include src="'templates/menu-template.html'"/>
+    <nav id="main-navbar" class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li> 
+          <li><a href="#">Page 3</a></li> 
+        </ul>
+      </div>
     </nav>
+    <div id="container1">
+        <div id="main-jumbotron" class="jumbotron">
+          <h1 class="display-3">Hello, world!</h1>
+              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <hr class="m-y-2">
+              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </p>
+        </div>
+    </div>
+    <div id="container1">
+        Container 2
+    </div>
+    <div id="container2">
+        Container 3
+    </div>
     
-    <div ng-view/></div>
-    <script src="libraries/angular.js"></script>
-    <script src="libraries/angular-route.js"></script>
-    <script src="application.js"></script>
-    <script src="constants/configuration-constants.js"></script>
-    <script src="services/menu-service.js"></script>
-    <script src="controllers/details-controller.js"></script>
-    <script src="controllers/menu-controller.js"></script>
-    <script src="directives/menu-item-directive.js"></script>
-    <script src="filters/to-date-string-filter.js"></script>
+    
+    
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-loader/angular-loader.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
