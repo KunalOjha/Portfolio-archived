@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/main.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 </head>
-<body>
+<body ng-app="webApp">
     <nav id="main-navbar" class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -20,30 +20,37 @@
         </ul>
       </div>
     </nav>
-    <div id="container1">
-        <div id="main-jumbotron" class="jumbotron">
-          <h1 class="display-3">Hello, world!</h1>
-              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-              <hr class="m-y-2">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
+        <div id="main-jumbotron" class="jumbotron container-fluid">
+        <div class="row"> 
+            <div class="col-md-4">
+                Insert Profile Picture Here
+            </div>
+            <div class="col-md-8">
+              <h1 class="display-3">Hello, world!</h1>
+                  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                  <hr class="m-y-2">
+                  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                  <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>    
         </div>
-    </div>
+        </div>
     <div id="container1">
-        Container 2
+        <mainHero></mainHero>
     </div>
     <div id="container2">
-        Container 3
+        Container 2
     </div>
-    
-    
     
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-loader/angular-loader.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/module.js"></script>
+    <script src="views/mainHero.html"></script>
+    <script src="scripts/controllers/mainHeroController.js"></script>
+    <script src="scripts/directives/mainHero.directive.js"></script>
 </body>
 </html>

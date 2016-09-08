@@ -4,18 +4,28 @@
 }
 
 #main-jumbotron {
+    position: relative;
     background-color: #F1F1EA;
     margin-top: -20px;
     margin-left: 10x;
 }
 
-#container1 { 
-    background-color: slategray;
-    margin-top: -20px;
-    height: 720px;
-}
+#container1 {
+    position: relative; 
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: black;
+    margin-top: -30px;
+    height: 300px;
+    background-color: slategray
+} 
 
-#container2 { 
-    background-color: #D9853B;
-    height: 720px;
-}
+#container2 {
+    position: relative; 
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: black;
+    margin-top: -30px;
+    height: 300px;
+    background-color: blacks
+} 
