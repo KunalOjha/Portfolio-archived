@@ -1,56 +1,37 @@
 <!doctype html>
-<html lang="en" ng-app="application">
+<html lang="en" ng-app="webApp">
 <head>
     <meta charset="utf-8">
+    
     <title>My Portfolio</title>
+    
+    <!--Stylesheets -->
     <link rel="stylesheet" href="styles/main.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-</head>
-<body ng-app="webApp">
-    <nav id="main-navbar" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">My Portfolio</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li> 
-          <li><a href="#">Page 3</a></li> 
-        </ul>
-      </div>
-    </nav>
-        <div id="main-jumbotron" class="jumbotron container-fluid">
-        <div class="row"> 
-            <div class="col-md-4">
-                <img id="profile-pic" src="images/ProfilePic.jpg"/>
-            </div>
-            <div class="col-md-8">
-              <h1 class="display-3">Hello world!</h1>
-                  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                  <hr class="m-y-2">
-                  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                  <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
-            </div>    
-        </div>
-        </div>
-    <div id="container1">
-        <mainHero></mainHero>
-    </div>
-    <div id="container2">
-        Container 2
-    </div>
-    
-    <script src="bower_components/angular/angular.min.js"></script>
+    <!--Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-loader/angular-loader.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Module -->
     <script src="scripts/module.js"></script>
-    <script src="views/mainHero.html"></script>
+    <!--Controllers -->
     <script src="scripts/controllers/mainHeroController.js"></script>
+    <!--Directives-->
     <script src="scripts/directives/mainHero.directive.js"></script>
+    <script src="scripts/directives/mainNavbar.directive.js"></script>
+</head>
+    
+ <!--Main Landing Page-->    
+<body ng-app="webApp">
+    <main-navbar></main-navbar>
+    <main-hero></main-hero>
+    <div id="container1"> 
+        Container 1
+    </div>
+    <div id="container2">
+        Container 2
+    </div>
 </body>
 </html>

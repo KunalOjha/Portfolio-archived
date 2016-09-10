@@ -5,13 +5,12 @@
     
     angular
         .module('webApp')
-        .controller('mainHeroController', mainHeroController);
+        .controller('MainHeroController', MainHeroController);
     
-    mainHeroController.$inject = [];
+    MainHeroController.$inject = [];
     
     function MainHeroController() 
         {
-            alert('works!');
         }
     
  })() 
