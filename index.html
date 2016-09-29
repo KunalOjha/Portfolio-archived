@@ -8,28 +8,35 @@
     <!--Stylesheets -->
     <link rel="stylesheet" href="styles/main.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.css"/>
     <!--Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-loader/angular-loader.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src = 'angular-d3-collapsible-tree.min.js'></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.js"></script>
     <!--Module -->
-    <script src="scripts/module.js"></script>
+    <script src="scripts/modules/module.js"></script>
+    <script src="scripts/modules/d3.module.js"></script>
     <!--Controllers -->
     <script src="scripts/controllers/mainHeroController.js"></script>
+    <script src="scripts/controllers/workHistoryController.js"></script>
     <!--Directives-->
     <script src="scripts/directives/mainHero.directive.js"></script>
     <script src="scripts/directives/mainNavbar.directive.js"></script>
+    <script src="scripts/directives/workHistory.directive.js"></script>
 </head>
     
  <!--Main Landing Page-->    
 <body ng-app="webApp">
     <main-navbar></main-navbar>
     <main-hero></main-hero>
-    <div id="container1"> 
-        Container 1
-    </div>
+    <div id="container1" ng-init="chart=[10, 20, 30]"> 
+            <work-history chart-data="chart"></work-history>
+        </div>
     <div id="container2">
         Container 2
     </div>
