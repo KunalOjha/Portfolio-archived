@@ -5,19 +5,21 @@
 
 #main-jumbotron {
     position: relative;
-    background-color: #F1F1EA;
+    background-color: white;
     margin-top: 50px;
     margin-left: 10x;
 }
 
 #container1 {
     position: relative; 
-    border-top-style: solid;
-    border-top-width: 2px;
-    border-top-color: black;
+    border:  1px solid rgba(0, 0, 0, .10);
     margin-top: -30px;
-    height: 400px;
-    background-color: slategray
+    height: 500px;
+    background-color: slategray;
+    padding-top: 20px;
+    -webkit-box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
 } 
 
 #container2 {
@@ -38,32 +40,4 @@
     height: 300px;
     width: auto;
     margin-left: 75px;
-}
-
-.node {
-    cursor: pointer;
-    }
-
-.node circle {
-    fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
-}
-
-.found {
-    fill: #ff4136;
-    stroke: #ff4136;
-}
-.node text {
-    font: 10px sans-serif;
-}
-
-.link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
-}
-/*Just to ensure the select2 box is "glued" to the top*/
-.search {
-    width: 100%;
 }
