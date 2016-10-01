@@ -4,26 +4,27 @@
   
 	angular
 		.module('webApp')
-		.directive('workHistory', workHistory);
+		.directive('techExperience', techExperience);
     
-	function workHistory()
+	function techExperience()
 	{
 		var directive = 
             {
-                restrict: 'EA',
+                restrict: 'E',
                 //controller: 'WorkHistoryController',
                 //controllerAs: 'workhistory',
-                scope: {data: '=chartData'},
-                replace: true,
+                scope: {data: '=treeData'},
                 template: "<div style='width:100%'></div>",
-                link: workHistoryLink,
+                link: techExperienceLink,
             };
         
 		return directive;
 	}
     
-    function workHistoryLink(scope, el, attr/*, attrs, ctrl, tfn*/) 
+    function techExperienceLink(scope, el, attr/*, attrs, ctrl, tfn*/) 
     {
+        var values = scope.data;
+        console.log(values);
 
                     var div = d3.select("body")
                         .append("div") // declare the tooltip div
@@ -129,7 +130,7 @@
                         .style("fill", function (d) { return d._children ? "lightsteelblue" : "#fff"; });
 
                         nodeEnter.append("text")
-                            .attr("x", function (d) { return d.children || d._children ? -10 : 10; })
+                            .attr("x", function (d) { return d.children || d._children ? -10 : 12; })
                             .attr("dy", ".35em")
                             .attr("text-anchor", function (d) { return d.children || d._children ? "end" : "start"; })
                             .text(function (d) { return d.name; })

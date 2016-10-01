@@ -5,16 +5,16 @@
     
     angular
         .module('webApp')
-        .controller('WorkHistoryController', WorkHistoryController);
+        .controller('TechExperienceController', TechExperienceController);
     
-    WorkHistoryController.$inject = ['$scope'];
+    TechExperienceController.$inject = ['$scope'];
     
-    function WorkHistoryController($scope) 
-        {            
-         console.log($scope);
+    function TechExperienceController($scope) 
+        {          
+          //console.log($scope);    
           $scope.values = $scope.values || {};    
           $scope.values = {
-             "name": "Work History",
+             "title": "Let's Get Technical...",
              "children": [
               {
                "name": "analytics",
