@@ -11,7 +11,7 @@
     
     function MainHeroController() 
         {
-            //alert('works')
+            alert('works')
         }
     
  })() 

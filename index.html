@@ -5,24 +5,31 @@
     
     <title>My Portfolio</title>
     
+    
+
+
     <!--Stylesheets -->
     <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/blog.css"/>
     <link rel="stylesheet" href="styles/d3.tree.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.css"/>
+    <link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/110131/responsive.css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <!--Libraries -->
     <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-loader/angular-loader.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.js"></script>
     <!--Module -->
-    <script src="scripts/modules/module.js"></script>
+    <script src="scripts/modules/app.js"></script>
     <script src="scripts/modules/d3.module.js"></script>
     <!--Controllers -->
     <script src="scripts/controllers/mainHeroController.js"></script>
+    <script src="scripts/controllers/blogController.js"></script>
     <script src="scripts/controllers/techExperienceController.js"></script>
     <!--Directives-->
     <script src="scripts/directives/mainHero.directive.js"></script>
@@ -33,13 +40,11 @@
  <!--Main Landing Page-->    
 <body>
     <main-navbar></main-navbar>
-    <main-hero></main-hero>
-    <div id="container1" ng-controller="TechExperienceController"> 
-        <h1 id="tree-title">{{values.title}}</h1>
-        <tech-experience tree-data="values"></tech-experience>
-        </div>
-    <div id="container2">
-        Container 2
+   <!-- <main-hero></main-hero>-->    
+<body>
+    <div id="wrap">
+  <!-- this is where content will be injected -->
+    <div ng-view></div>
     </div>
 </body>
 </html>
