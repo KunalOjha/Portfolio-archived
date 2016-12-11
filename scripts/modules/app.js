@@ -9,6 +9,11 @@
                     $routeProvider
                     
                       .when('/home', {
+                        templateUrl: './views/home.html',
+                        controller: 'HomeController'
+                      })
+                    
+                      .when('/blog', {
                         templateUrl: './views/blog.html',
                         controller: 'BlogController',
                         controllerAs: 'blog'
