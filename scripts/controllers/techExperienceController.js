@@ -10,8 +10,7 @@
     TechExperienceController.$inject = ['$scope'];
     
     function TechExperienceController($scope) 
-        {          
-        alert('inside the controller');    
+        {              
           //console.log($scope);    
           $scope.values = $scope.values || {};    
           $scope.values = {
