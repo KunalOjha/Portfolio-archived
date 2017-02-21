@@ -3,7 +3,7 @@
         'use strict'
 
         angular
-            .module('webApp', ['d3','ngRoute'])
+            .module('webApp', ['d3','ngRoute', 'theta'])
             
             .config(function($routeProvider) {
                     $routeProvider
@@ -17,6 +17,11 @@
                         templateUrl: './views/blog.html',
                         controller: 'BlogController',
                         controllerAs: 'blog'
+                      })
+                    
+                      .when('/contactMe', {
+                        templateUrl: './views/contactMe.html',
+                        controller: 'ContactMeController',
                       })
     
                       .when('/aboutme', {
