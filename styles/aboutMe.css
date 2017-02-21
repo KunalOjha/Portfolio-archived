@@ -1,0 +1,22 @@
+#aboutMe-topbar {
+    width: 100% !important;
+    margin-top: 53px !important;
+    height: 75px;
+}
+
+#mainBanner {
+    margin-top: 2px;
+    width: 1700px !important;
+    height: 400px;
+}
+
+#aboutme {
+    background-color: steelblue;
+    margin-top: -46px;
+}
+
+#aboutMe-header {
+    text-align: center;
+    margin-top: 100px;
+    color: orange;
+    text-shadow: 4px 4px 2px black;
