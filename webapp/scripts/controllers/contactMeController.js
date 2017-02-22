@@ -99,7 +99,7 @@
                         "y": 72
                     }
                 },
-                "reflection": true,
+                "reflection": false,
                 "reflectionBelow": 29
             });
             carouselCreated.call(container, null, {

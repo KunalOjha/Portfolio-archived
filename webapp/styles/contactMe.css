@@ -5,3 +5,7 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
+.theta-carousel-inner-container {
+    margin-top: -100px !important;
+}
