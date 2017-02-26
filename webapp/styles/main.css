@@ -2,7 +2,8 @@
 #main-navbar {
     border-radius: 0px !important;
     text-align: center;
-    background-color:black;
+    border-style: solid;
+    border-color: black;
 }
 
 .navbar .navbar-nav {

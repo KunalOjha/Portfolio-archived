@@ -11,9 +11,15 @@
     
     function HomeController() 
         {
-            $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+            $('#home-video').on('loadstart', function (event) {
+              $(this).addClass('background');
+              $(this).attr("poster", "/your/loading.gif");
+            });
+
+            $('#home-video').on('canplay', function (event) {
+              $(this).removeClass('background');
+              $(this).removeAttr("poster");
+            });
         }
     
  })() 
