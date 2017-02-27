@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>My Portfolio</title>
+    <title>Kunal Ojha | Web Developer</title>
     
     <!--Stylesheets -->
     <link rel="stylesheet" href="styles/aboutMe.css"/>
@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="styles/main.css"/>
     <link rel="stylesheet" href="styles/contactMe.css"/>
     <link rel="stylesheet" href="styles/d3.tree.css"/>
+    <link rel="stylesheet" href="styles/workHistory.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.css"/>
     <link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/110131/responsive.css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <!--Libraries -->
+    <script src="libraries/Modernizr.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -44,10 +46,9 @@
  <!--Main Landing Page-->    
 <body>
     <main-navbar></main-navbar>
-   <!-- <main-hero></main-hero>-->    
-    <div id="wrap">
+  
   <!-- this is where content will be injected -->
     <div ng-view></div>
-    </div>
+ 
 </body>
 </html>

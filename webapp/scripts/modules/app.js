@@ -27,8 +27,13 @@
                       .when('/aboutme', {
                         templateUrl: './views/mainHero.html',
                         controller: 'TechExperienceController'
-                      }).
-                      otherwise({
+                      })
+                        
+                       .when('/resume', {
+                        templateUrl: './views/workHistory.html',
+                        controller: 'WorkHistoryController'
+                    })
+                      .otherwise({
                         redirectTo: '/home'
                       });
                   });
