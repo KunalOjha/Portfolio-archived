@@ -11,15 +11,8 @@
     
     function HomeController() 
         {
-            $('#home-video').on('loadstart', function (event) {
-              $(this).addClass('background');
-              $(this).attr("poster", "/your/loading.gif");
-            });
-
-            $('#home-video').on('canplay', function (event) {
-              $(this).removeClass('background');
-              $(this).removeAttr("poster");
-            });
-        }
-    
+         $(document).ready(function() {
+				$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
+			})
+            }
  })() 
