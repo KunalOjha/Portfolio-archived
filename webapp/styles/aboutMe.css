@@ -42,8 +42,8 @@
     border-top-width: 2px;
     border-top-color: black;
     margin-top: -30px; 
-    height: 400px;
-    background-color: black;
+    height: 700px;
+    background-color: lightslategray;
 } 
  
 #profile-pic {
@@ -75,5 +75,11 @@
     color: darkslategray;
     text-align: center;
     font-size: 68px;
-    
+}
+
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    text-align: center;
+    margin-left: -25%;
+    margin-top: 10%;
 }

@@ -10,7 +10,70 @@
     TechExperienceController.$inject = ['$scope'];
     
     function TechExperienceController($scope) 
-        {              
+        { 
+           $('#circle-javascript').circleProgress({
+            value: 0.75,
+            size: 180,
+            fill: {
+              gradient: ["red", "orange"]
+            }
+          });  
+            
+            $('#circle-angular').circleProgress({
+            value: 0.75,
+            size: 180,
+            fill: {
+              gradient: ["red", "white"]
+            }
+          });  
+            
+            $('#circle-node').circleProgress({
+            value: 0.75,
+            size: 180,
+            fill: {
+              gradient: ["green", "blue"]
+            }
+          });  
+            
+            $('#circle-bootstrap').circleProgress({
+            value: 0.75,
+            size: 180,
+            fill: {
+              gradient: ["blue", "white"]
+            }
+          });
+            $('#circle-agile').circleProgress({
+            value: 0.75,
+            size: 180,
+            fill: {
+              gradient: ["red", "orange"]
+            }
+          });  
+            
+            $('#circle-html').circleProgress({
+            value: 0.75,
+            size: 180,
+            fill: {
+              gradient: ["red", "white"]
+            }
+          });  
+            
+            $('#circle-css').circleProgress({
+            value: 0.75,
+            size: 180,
+            fill: {
+              gradient: ["green", "blue"]
+            }
+          });  
+            
+            $('#circle-testing').circleProgress({
+            value: 0.75,
+            size: 180,
+            fill: {
+              gradient: ["blue", "white"]
+            }
+          });
+            
           //console.log($scope);    
           $scope.values = $scope.values || {};    
           $scope.values = {
