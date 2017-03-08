@@ -81,5 +81,13 @@
     /* Make the caption a block so it occupies its own line. */
     text-align: center;
     margin-left: -25%;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.image1 {
+    height: auto;
+    width: 140px;
+    margin-left: 20px;
+    margin-top: -200px
 }
