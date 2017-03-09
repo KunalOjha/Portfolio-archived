@@ -81,13 +81,47 @@
     /* Make the caption a block so it occupies its own line. */
     text-align: center;
     margin-left: -25%;
-    margin-top: 5%;
     margin-bottom: 15%;
 }
 
-.image1 {
+.meter-stack {
     height: auto;
-    width: 140px;
-    margin-left: 20px;
+    width: 150px;
+    margin-left: 15px;
+    margin-top: -200px
+}
+
+#html5-logo {
+    height: auto;
+    width: 120px;
+    margin-left: 29px;
+    margin-top: -190px
+}
+
+#bootstrap-logo {
+    height: auto;
+    width: 110px;
+    margin-left: 35px;
+    margin-top: -197px
+}
+
+#node-logo {
+    height: auto;
+    width: 120px;
+    margin-left: 30px;
+    margin-top: -200px
+}
+
+#angular-logo {
+    height: auto;
+    width: 150px;
+    margin-left: 15px;
+    margin-top: -192px
+}
+
+#grunt-logo {
+    height: auto;
+    width: 130px;
+    margin-left: 25px;
     margin-top: -200px
 }

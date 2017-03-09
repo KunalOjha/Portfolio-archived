@@ -11,66 +11,62 @@
     
     function TechExperienceController($scope) 
         { 
-           $('#circle-javascript').circleProgress({
-            value: 0.75,
+           $('#meter-javascript').circleProgress({
+            value: 0.95,
             size: 180,
             fill: {
-              gradient: ["red", "orange"]
-            }
-          });  
-            
-            $('#circle-angular').circleProgress({
-            value: 0.75,
-            size: 180,
-            fill: {
-              gradient: ["red", "white"]
-            }
-          });  
-            
-            $('#circle-node').circleProgress({
-            value: 0.75,
-            size: 180,
-            fill: {
-              gradient: ["green", "blue"]
-            }
-          });  
-            
-            $('#circle-bootstrap').circleProgress({
-            value: 0.75,
-            size: 180,
-            fill: {
-              gradient: ["blue", "white"]
+              gradient: ["darkgoldenrod", "gold"]
             }
           });
-            $('#circle-agile').circleProgress({
-            value: 0.75,
+            
+            $('#meter-html5').circleProgress({
+            value: 0.85,
             size: 180,
             fill: {
               gradient: ["red", "orange"]
             }
-          });  
+          });
             
-            $('#circle-html').circleProgress({
+            $('#meter-css3').circleProgress({
+            value: 0.85,
+            size: 180,
+            fill: {
+              gradient: ["steelblue", "deepskyblue"]
+            }
+          }); 
+            $('#meter-jquery').circleProgress({
+            value: 0.95,
+            size: 180,
+            fill: {
+              gradient: ["blue", "black"]
+            }
+          });
+            $('#meter-angular').circleProgress({
             value: 0.75,
             size: 180,
             fill: {
-              gradient: ["red", "white"]
+              gradient: ["red", "salmon"]
+            }
+          });
+            $('#meter-node').circleProgress({
+            value: 0.65,
+            size: 180,
+            fill: {
+              gradient: ["darkgreen", "forestgreen"]
+            }
+          });     
+            $('#meter-bootstrap').circleProgress({
+            value: 0.90,
+            size: 180,
+            fill: {
+              gradient: ["purple", "indigo"]
             }
           });  
-            
-            $('#circle-css').circleProgress({
-            value: 0.75,
+            $('#meter-grunt').circleProgress({
+            value: 0.90,
             size: 180,
             fill: {
-              gradient: ["green", "blue"]
-            }
-          });  
-            
-            $('#circle-testing').circleProgress({
-            value: 0.75,
-            size: 180,
-            fill: {
-              gradient: ["blue", "white"]
+              gradient: ["peru", "goldenrod"]
             }
           });
             
