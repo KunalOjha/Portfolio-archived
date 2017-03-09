@@ -11,6 +11,19 @@
     
     function TechExperienceController($scope) 
         { 
+            loadSkillCircles();
+            var el = $('.skill-circle'),
+                inited = false;
+
+                el.appear({ force_process: true });
+
+                el.on('appear', function() {
+                  if (!inited) {
+                    loadSkillCircles();
+                    inited = true;
+                  }
+                });
+        function loadSkillCircles() {     
            $('#meter-javascript').circleProgress({
             value: 0.95,
             size: 180,
@@ -69,6 +82,7 @@
               gradient: ["peru", "goldenrod"]
             }
           });
+        }
             
           //console.log($scope);    
           $scope.values = $scope.values || {};    
