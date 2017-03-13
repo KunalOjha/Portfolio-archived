@@ -4,17 +4,17 @@
   
 	angular
 		.module('webApp')
-		.directive('mainHero', mainHero);
+		.directive('aboutMe', aboutMe);
     
-	function mainHero()
+	function aboutMe()
 	{
 		var directive = 
             {
                 restrict: 'E',
-                controller: 'MainHeroController',
-                controllerAs: 'mainHero',
+                controller: 'AboutMeController',
+                controllerAs: 'aboutMe',
                 scope: {},
-                templateUrl: './views/mainHero.html'
+                templateUrl: './views/aboutMe.html'
             };
         
 		return directive;

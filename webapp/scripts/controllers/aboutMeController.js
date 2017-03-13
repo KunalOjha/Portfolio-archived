@@ -5,11 +5,11 @@
     
     angular
         .module('webApp')
-        .controller('TechExperienceController', TechExperienceController);
+        .controller('AboutMeController', AboutMeController);
     
-    TechExperienceController.$inject = ['$scope'];
+    AboutMeController.$inject = ['$scope'];
     
-    function TechExperienceController($scope) 
+    function AboutMeController($scope) 
         { 
             loadSkillCircles();
             var el = $('.skill-circle'),

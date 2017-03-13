@@ -6,10 +6,11 @@
     <title>Kunal Ojha | Web Developer</title>
     
     <!--Stylesheets -->
+     <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"/>
     <link rel="stylesheet" href="styles/aboutMe.css"/>
     <link rel="stylesheet" href="styles/blog.css"/>
     <link rel="stylesheet" href="styles/home.css"/>
-    <link rel="stylesheet" href="styles/main.css"/>
     <link rel="stylesheet" href="styles/contactMe.css"/>
     <link rel="stylesheet" href="styles/d3.tree.css"/>
     <link rel="stylesheet" href="styles/workHistory.css"/>
@@ -35,14 +36,18 @@
     <script src="scripts/modules/app.js"></script>
     <script src="scripts/modules/d3.module.js"></script>
     <!--Controllers -->
-    <script src="scripts/controllers/mainHeroController.js"></script>
+    <script src="scripts/controllers/workHistoryController.js"></script>
+    <script src="scripts/controllers/commentController.js"></script>
     <script src="scripts/controllers/homeController.js"></script>
     <script src="scripts/controllers/blogController.js"></script>
-    <script src="scripts/controllers/techExperienceController.js"></script>
+    <script src="scripts/controllers/aboutMeController.js"></script>
     <script src="scripts/controllers/contactMeController.js"></script>
     <!--Directives-->
-    <script src="scripts/directives/mainHero.directive.js"></script>
     <script src="scripts/directives/mainNavbar.directive.js"></script>
+    <script src="scripts/directives/home.directive.js"></script>
+    <script src="scripts/directives/aboutMe.directive.js"></script>
+    <script src="scripts/directives/workHistory.directive.js"></script>
+    <script src="scripts/directives/contactMe.directive.js"></script>
     <script src="scripts/directives/techExperience.directive.js"></script>
     <script src="scripts/directives/theta-carousel-angular-directive.min.js"></script>
 </head>
@@ -50,6 +55,7 @@
  <!--Main Landing Page-->    
 <body>
     <main-navbar></main-navbar>
+
   
   <!-- this is where content will be injected -->
     <div ng-view></div>
