@@ -59,19 +59,25 @@ table {
 
 .navbar .navbar-nav {
     display: inline-block;
-    float: none;
+    margin-left: 100px !important;
 }
 
 .navbar-inner {
     min-height: 0px;
 }
 
-.navbar-brand,
 .navbar-nav li a {
     line-height: 10px;
     height: 50px;
     padding-top: 0;
-    margin-left: 20px !important;
+    margin-left: 10px !important;
+}
+
+.navbar-brand {
+    line-height: 10px;
+    height: 50px;
+    padding-top: 0;
+    margin-left: -25px !important;
 }
 
 .navbar #nav > .active > a {
@@ -91,11 +97,12 @@ table {
 }
 
 #beta-tag {
-    height: 55px;
+    height: 50px;
     z-index: 1000;
-    margin-left: -290px;
+    margin-left: 1050px;
     position: fixed;
 }
+
 
 video {
   width: 101%    !important;
