@@ -9,10 +9,10 @@
     
     HomeController.$inject = [];
     
-    function HomeController() 
+    function HomeController($scope, $location, $anchorScroll) 
         {
          $(document).ready(function() {
 				$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
 			})
-            }
+        }
  })() 

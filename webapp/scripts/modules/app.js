@@ -22,6 +22,5 @@
                       .otherwise({
                         redirectTo: '/home'
                       });
-                  });
-
-    })();
+                  })   
+        })();

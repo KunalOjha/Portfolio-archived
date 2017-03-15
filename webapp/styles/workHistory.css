@@ -44,12 +44,12 @@ Modules - reusable parts of our design
 
 #workHistory-Header {
     margin-top: 0px;
-    padding-top: 100px;
+    padding-top: 130px;
     font-size: 48px;
 }
 
 #workHistory-container {
-    background: url('../images/rock-climbing-3840x2160-adventure-minimal-4k-993.jpg') no-repeat;  
+    background: url('../images/landscape4.jpg') no-repeat;  
     margin-top: -42px
 }
 

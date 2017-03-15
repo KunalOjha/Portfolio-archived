@@ -11,6 +11,7 @@
         var directive = 
             {
                 restrict: 'E',
+                controller: 'MainController',
                 scope: {},
                 templateUrl: './views/mainNavbar.html'
             };

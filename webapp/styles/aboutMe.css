@@ -10,20 +10,21 @@
     -moz-box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
     opacity:  .93;
-    padding-top: 10px;
-    padding-left: 60px;
+    padding-top: 45px;
+    padding-left: 50px;
     margin-top: -33px 
 }
 
 #mainBanner {
     margin-top: 2px;
+    padding-top: 10px
     width: 1700px !important;
     height: 650px;
 }
 
 #aboutme {
-    height: 750px;
-    background: url('http://cdn.paper4pc.com/images/minimalist-view-over-the-grass-wallpaper-1.jpg') no-repeat center top;
+    height: 775px;
+    background: url('../images/landscape1.jpg') no-repeat center top;
     margin-top: -48px;
 }
 
@@ -35,26 +36,26 @@
     text-shadow: 4px 4px 2px black;
 }
 
-#container1 {
+#techEnvironments {
     position: relative; 
     border:  1px solid rgba(0, 0, 0, .10);
     margin-top: -80px;
-    height: 750px;
-    background: url('https://wallpaperscraft.com/image/sky_minimalism_clouds_74438_2560x1440.jpg') no-repeat left bottom;
+    height: 805px;
+    background: url('../images/landscape2.jpg') no-repeat left bottom;
     padding-top: 30px;
     -webkit-box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
 } 
 
-#container2 {
+#skills {
     position: relative; 
     border-top-style: solid;
     border-top-width: 2px;
     border-top-color: black;
     margin-top: -30px; 
-    height: 750px;
-    background: url('../images/mountain-clipart-Mountain-clip-art-vector-mountain-graphics.png') center center;
+    height: 775px;
+    background: url('../images/landscape3.png') center center;
     -webkit-box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 27px 2px rgba(0,0,0,0.75);
@@ -79,14 +80,16 @@
     margin-left: 375px;
     width: 1000px;
     text-align: center;
-    background-color: darkgray;
+    background-color: black;
+    color: aliceblue;
    -webkit-box-shadow: 6px -1px 34px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: 6px -1px 34px 3px rgba(0,0,0,0.75);
     box-shadow: 6px -1px 34px 3px rgba(0,0,0,0.75);
+    opacity: .6;
 }
 
 #skillmeter-title {
-    color: darkslategray;
+    color: midnightblue;
     text-align: center;
     font-size: 68px;
 }
