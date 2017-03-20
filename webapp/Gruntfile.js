@@ -3,13 +3,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     concat: {
-      options: {
-        separator: ';'
+      js: {
+        src: ['scripts/modules/*.js','scripts/controllers/*.js', 'scripts/directives/*.js'],
+        dest: 'build/scripts.js'
       },
-      dist: {
-        src: ['src/**/*.js'],
-        dest: 'dist/<%= pkg.name %>.js'
-      }
+      css: {
+        src: ['styles/*.css'],
+        dest: 'build/styles.css'
+      }    
     },
     uglify: {
       options: {
@@ -42,14 +43,14 @@ module.exports = function(grunt) {
     }
   });
 
+    grunt.loadNpmTasks('grunt-contrib-concat');    
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('test', ['jshint', 'qunit']);
 
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+  grunt.registerTask('default', ['concat', 'uglify']);
 
 };
